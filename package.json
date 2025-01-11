@@ -1,0 +1,20 @@
+{
+  "name": "yamlpractise2",
+  "version": "1.0.0",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohailahsan0393/yamlpractise2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohailahsan0393/yamlpractise2/issues"
+  },
+  "homepage": "https://github.com/sohailahsan0393/yamlpractise2#readme",
+  "description": ""
+}
