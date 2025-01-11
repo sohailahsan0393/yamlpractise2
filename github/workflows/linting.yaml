@@ -19,8 +19,13 @@ jobs:
           run:  npx htmlhint "**/*.html"
         - name: Lint stylelint css files
           run:   npx stylelint "**/*.css"
+        - name: LInt javascript
+          run: npm install --save-dev eslint
+        - name: lint js files
+          run:  npx eslint "**/*.js"   
         - name: Dsipay package.json contents
-          run:  cat package.json     
+          run:  cat package.json 
+
        
        
       
