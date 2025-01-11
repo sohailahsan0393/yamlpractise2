@@ -19,7 +19,7 @@ jobs:
           run:  npx htmlhint "**/*.html"
         - name: Lint stylelint css files
           run:   npx stylelint "**/*.css"
-        - name: LInt javascript
+        - name: Install ESlint
           run: npm install --save-dev eslint
         - name: lint js files
           run:  npx eslint "**/*.js"   
