@@ -1,0 +1,26 @@
+name: lint-wf
+on:
+  push:
+   branches:
+     -develop
+  pull-request:
+     -develop
+jobs:
+   linting-lates:
+      runs-on:  ubuntu-latest
+      steps:
+        - name: Checkout Repositry
+          uses: actions/checkout@v4
+        - name: Install Html Hint
+          run:  npm install --save-dev htmlhint
+        - name: Install Style lint css
+          run:  npm install --save-dev stylelint
+        - name: lint html files
+          run:  npx htmlhint "**/*.html"
+        - name: Lint stylelint css files
+          run:   npx stylelint "**/*.css"
+        - name: Dsipay package.json contents
+          run:  cat package.json     
+       
+       
+      
